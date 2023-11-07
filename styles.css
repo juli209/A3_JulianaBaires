@@ -1,0 +1,278 @@
+.decal {
+    display: block;
+    margin-right: auto;
+    width:10%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.home-page{
+    padding-bottom: 15%;
+}
+
+@font-face {
+    font-family: "Franklin-Gothic-Extra-Condensed";
+    src: url(fonts/FranklinGothic.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+header, .highlights, .bags {
+    font-family: 'Franklin-Gothic-Extra-Condensed';
+    font-size: 6vw;
+    color: #e4002b;
+    text-align: center;
+}
+
+/*HIGHLIGHTS SECTION*/
+
+.section highlights-section{
+    background-color: #EDF2F4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.decal1 img {
+    width: 15%;
+    height: auto;
+    z-index: 1;
+    position: absolute; 
+    top: 5%;
+    left: 2%;
+}
+
+.decal2 img {
+    width: 15%;
+    height: auto;
+    z-index: 1;
+    position: absolute; 
+    top: 75%;
+    left: 85%;
+}
+
+.polaroid-text {
+    font-family:'Gill Sans', sans-serif;
+    font-weight:lighter;
+    font-size: 3vw;
+}
+
+.highlights-section {
+    background-color: #EDF2F4;
+}
+
+.card-image {
+    max-width: 22%;
+    margin: 1%;
+  }
+
+/*BAGS SECTION*/
+
+.section bag-section {
+    background-color:#C9D6F1;
+}
+
+.bags-section {
+    background-color:#C9D6F1;
+    padding: 2%;
+}
+
+
+p.bag-label{ 
+    font-family:'Gill Sans';
+    font-weight: lighter;
+    font-size: 1.6vw;
+    color: #e4002b;
+    text-align: center;
+}
+
+p.bag-price{
+    font-family:'Gill Sans';
+    font-weight:bold;
+    font-size: 3vw;
+    color: #e4002b;
+    text-align: center;
+}
+
+
+/* CAROUSEL */
+
+.aspect-ratio {
+    margin: 1%;
+    height: auto;
+    overflow: visible;
+    }
+
+sl-carousel::part(base) {
+    background-color: #C9D6F1;
+    height: auto;
+    overflow: visible;
+    }
+
+sl-carousel::part(pagination-item) {
+    background-color: black;
+    }
+
+sl-carousel::part(pagination-item--active) {
+    background-color: #e4002b;
+    height:auto;
+    }
+    
+/* STEAL THEIR LOOK SECTION */
+.STL-section {
+    background-color: #B2C2E2;
+    position: relative; 
+}
+
+.model {
+    display: flex;
+    justify-content: right;
+}
+
+.model img {
+    width: 90%;
+    height: auto;
+}
+
+.STL { 
+    font-family: 'Franklin-Gothic-Extra-Condensed';
+    font-size: 15vw;
+    color: #e4002b;
+    text-align: left;
+    position: absolute;
+    width: 50vw;
+    margin: 2vw;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image, .hover-image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .silver-bag-text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;    
+    top: 60%;
+    left: 65%;
+    text-align: center;
+    background-color: white;
+    max-width: 10vw;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .silver-bag-text {
+    opacity: 1;
+  }
+  
+  .text {
+    font-family: 'Franklin-Gothic-Extra-Condensed';
+    font-size: 1vw;
+    color: #e4002b;
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+  }
+
+/*CONTACT SECTION*/
+
+.section contact-section{
+    background-color: #5378BE;
+}
+
+.contact-section {
+    background-color: #5378BE;
+    padding: 1%;
+}
+
+.contact {
+    font-family: 'Franklin-Gothic-Extra-Condensed';
+    font-size: 10vw;
+    color: #e4002b;
+    text-align: center;
+}
+
+p.dontleave{
+    font-family:'Gill Sans';
+    font-weight:lighter;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    
+} 
+
+.social-images{
+    display: flex;
+    justify-content: center;
+
+}
+
+.instagram-logo, .twitter-logo {
+    width: 20%;
+    height: auto;
+    margin: 5%;
+}
+
+/* SVG LOGO */
+
+.instagram-logo:hover{ 
+    stroke-dasharray: 900;
+    animation: draw 2s ease infinite;
+}
+
+@keyframes draw{
+    from { 
+        stroke-dashoffset: 900;
+    }
+    
+    to {
+        stroke-dashoffset: 0;
+    }
+    }
+
+.twitter-logo:hover{ 
+        stroke-dasharray: 900;
+        animation: draw 2s ease infinite;
+    }
+    
+@keyframes draw{
+    from { 
+        stroke-dashoffset: 900;
+    }
+        
+    to {
+        stroke-dashoffset: 0;
+    }
+    }
+    
+/* FULL PAGE ANIMATION */
+
+.fp-watermark {
+    display:none;
+}
+
