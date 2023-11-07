@@ -6,14 +6,14 @@ new fullpage('#fullpage', {
 });
 
 //below is the GSAP code
-//NOTE: IntertiaPlugin is a club GSAP perk - this is a trial plugin that works on localhost, codepen, codesandbox and stackblitz - InertiaPlugin does appear in my Live Server port
-gsap.registerPlugin(Draggable), gsap.registerPlugin(InertiaPlugin); //this registers the draggable and intertia plugin from GSAP. This enables elements to be draggable, but also have momentum when dragged.
+//NOTE: IntertiaPlugin is a club GSAP perk - this is a trial plugin that works on localhost, codepen, codesandbox and stackblitz - InertiaPlugin does NOT work with Netlify
+//gsap.registerPlugin(Draggable), gsap.registerPlugin(InertiaPlugin); //this registers the draggable and intertia plugin from GSAP. This enables elements to be draggable, but also have momentum when dragged.
 
 
 // this creates a draggable instance for the 1st decal element - we are able to select the class
 Draggable.create(".decal1", {
     bounds: document.getElementById("section highlights-section"), //the decal is bound to the container of the highlights section
-    inertia: true, //enabling inertia 
+    // inertia: true, //enabling inertia 
     onClick: function () { //event listener for any click events on the decal
         console.log("clicked"); // logs a click in console
       },
@@ -28,7 +28,7 @@ gsap.registerPlugin(Draggable), gsap.registerPlugin(InertiaPlugin);
 
 Draggable.create(".decal2", {
     bounds: document.getElementById("section highlights-section"),
-    inertia: true,
+    // inertia: true,
     onClick: function () {
         console.log("clicked");
       },
